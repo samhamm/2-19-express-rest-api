@@ -1,0 +1,32 @@
+{
+  "name": "2-19-express-rest-api",
+  "version": "1.0.0",
+  "description": "Assignment for Code Fellows JavaScript Development accelerator (create a single resource rest API with Express that's backed by Mongo)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samhamm/2-19-express-rest-api.git"
+  },
+  "author": "Sam Hamm <samhamm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samhamm/2-19-express-rest-api/issues"
+  },
+  "homepage": "https://github.com/samhamm/2-19-express-rest-api",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0",
+    "express": "^4.11.2",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "mocha": "^2.1.0",
+    "mongoose": "^3.8.23"
+  }
+}
