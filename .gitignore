@@ -28,3 +28,7 @@ node_modules
 
 # "Mac droppings"
 *.DS_Store
+
+# Mongo DB directories
+db-pets
+db-test

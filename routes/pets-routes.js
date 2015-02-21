@@ -37,14 +37,12 @@ module.exports = function(app) {
     });
   });
 
-  //PATCH
-  app.patch('/pets/:id', function(req, res) {
-
-  });
-
   //DELETE
-  app.delete('/pets', function (req, res){
-
+  app.delete('/pets/:id', function (req, res) {
+    Pet.remove({_id: req.params.id}, function(err) {
+      if (err) return res.status(500).send({'msg': 'error deleting from pets'});
+      res.json({msg: 'deleted from pets'});
+    });
   });
 
 }; //closes the module.exports
