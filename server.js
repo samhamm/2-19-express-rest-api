@@ -4,7 +4,7 @@
 // http://expressjs.com/api.html#router (lots of info here!)
 // Read it closely!
 var express = require('express');
-var app = express;
+var app = express();
 var router = express.Router();
 
 // *** Connect to Mongo
