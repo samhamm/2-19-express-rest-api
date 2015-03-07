@@ -1,3 +1,9 @@
+var mongoose = require('mongoose');
+var chai = require('chai');
+var chaihttp = require('chai-http');
+chai.use(chaihttp);
+var expect = chai.expect;
+
 describe('pets api end points', function() {
   after(function(done) {
     mongoose.connection.db.dropDatabase(function() {
@@ -17,3 +23,4 @@ describe('pets api end points', function() {
         done();
       });
   });
+});
