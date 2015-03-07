@@ -7,11 +7,8 @@ var chai = require('chai');
 var chaihttp = require('chai-http');
 chai.use(chaihttp);
 
-var expect = chai.expect
+var expect = chai.expect;
 
-require('post-test');
+require('./post-test');
 
-require('get-put-del-tests');
-
-  });
-});
+require('./get-put-del-tests');
